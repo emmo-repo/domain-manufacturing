@@ -10,7 +10,7 @@
 
 <https://w3id.org/emmo/domain/manufacturing/modules/manufacturing-equipment> rdf:type owl:Ontology ;
                                                                               owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-equipment> ;
-                                                                              owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.1/dependencies> ;
+                                                                              owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.1/contributors> ;
                                                                               <http://purl.org/dc/terms/abstract> "Terms describing common types of equipment used in manufacturing."@en .
 
 #################################################################
