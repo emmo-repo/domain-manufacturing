@@ -2,12 +2,17 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
 
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta"                    uri="manufacturing.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/contributors"       uri="contributors.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/local"              uri="manufacturing-local.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/dependencies"       uri="manufacturing-dependencies.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta"                                 uri="manufacturing.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/contributors"                    uri="contributors.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/local"                           uri="manufacturing-local.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/manufacturing-dependencies"      uri="manufacturing-dependencies.ttl"/>
 
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment" uri="modules/manufacturing-equipment.ttl"/>
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes" uri="modules/manufacturing-processes.ttl"/>
+
+        <!-- Can be skipped when redirection rules have been merged -->
+        <uri name="https://w3id.org/emmo/domain/manufacturing/dependencies"                               uri="https://emmo-repo.github.io/domain-manufacturing/manufacturing-dependencies.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/dependencies"                    uri="https://emmo-repo.github.io/domain-manufacturing/versions/0.1.0-beta/manufacturing-dependencies.ttl"/>
+
     </group>
 </catalog>

@@ -16,8 +16,7 @@
 
 <https://w3id.org/emmo/domain/manufacturing> rdf:type owl:Ontology ;
     owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta> ;
-    owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/local> ,
-                <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/dependencies> ;
+    owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/local> ;
     dcterms:abstract "An EMMO-based domain ontology for manufacturing domain ontology, which extends the manufacturing module in EMMO disciplines."@en ;
     #dcterms:bibliographicCitation "https://doi.org/10.5281/zenodo.7693664" ;
     dcterms:created "2025-08-07"^^xsd:date ;
