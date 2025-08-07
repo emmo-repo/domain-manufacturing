@@ -2,6 +2,6 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
 <https://w3id.org/emmo/domain/manufacturing/local> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/local> ;
-    owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-equipment> ,
-                <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/modules/manufacturing-processes> .
+    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.1/local> ;
+    owl:imports <https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-equipment> ,
+                <https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-processes> .

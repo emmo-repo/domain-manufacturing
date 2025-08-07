@@ -9,7 +9,7 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 
 <https://w3id.org/emmo/domain/manufacturing/contributors> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.0-beta/contributors> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.1/contributors> ;
     owl:imports <https://w3id.org/emmo/contributors> ;
     dcterms:abstract "People and organisations who has contributed to the development of the Manufacturing Domain Ontology."@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
