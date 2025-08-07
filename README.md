@@ -12,7 +12,7 @@ Version dependencies on imported ontologies:
 | 0.1.0-beta | 1.0.0  |
 | 0.1.1      | 1.0.1  |
 
-Note that v0.1.0-beta is consistent with [ECHO] v0.30.0-beta.
+Note that version 0.1.0-beta is consistent with [ECHO] 0.30.0-beta.
 
 
 
