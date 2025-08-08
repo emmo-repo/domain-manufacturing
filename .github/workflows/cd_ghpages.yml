@@ -30,9 +30,14 @@ jobs:
         pip install --upgrade pip
         pip install EMMOntoPy
 
-    - name: Create squashed and inferred ontology
+    - name: Create dependencies, squashed and inferred ontologies
       run: |
         mkdir build
+        ontoconvert \
+            -saw \
+            --namespace="emmo:https://w3id.org/emmo#" \
+            ${ONTOLOGY_NAME}-dependencies.ttl \
+            build/${ONTOLOGY_NAME}-dependencies.ttl
         ontoconvert \
             -sawe \
             --base-iri="${ONTOLOGY_IRI}#" \
@@ -46,12 +51,6 @@ jobs:
             --infer=HermiT \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}-inferred.ttl
-
-    - name: Create dependencies
-      run: |
-        ontoconvert -saw \
-            ${ONTOLOGY_NAME}-dependencies.ttl \
-            build/${ONTOLOGY_NAME}-dependencies.ttl
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
