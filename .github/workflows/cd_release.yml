@@ -22,7 +22,7 @@ jobs:
         with:
           ref: gh-pages
 
-      - name: List tag
+      - name: Create and copy generated files to versions/
         run: |
           mkdir -p versions/${TAG#v}
           cp -f \
