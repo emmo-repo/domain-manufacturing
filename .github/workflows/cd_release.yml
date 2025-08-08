@@ -1,12 +1,8 @@
 name: Release new version
 
-#on:
-#  release:
-#    types: [published]
-
 on:
-  push:
-    branches: [master]
+  release:
+    types: [published]
 
 env:
   ONTOLOGY_NAME: manufacturing
@@ -29,9 +25,7 @@ jobs:
       - name: List tag
         run: |
           mkdir -p versions/$version
-          touch xxx
           cp -f \
-              xxx \
               README.md \
               ${ONTOLOGY_NAME}.ttl \
               ${ONTOLOGY_NAME}-dependencies.ttl \
