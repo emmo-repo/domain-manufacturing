@@ -13,7 +13,6 @@ permissions:
 
 jobs:
   release_version:
-    #concurrency: ci-${{ github.ref }}  # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
 
     steps:
@@ -34,6 +33,8 @@ jobs:
 
       - name: Push to gh-pages
         run: |
+          git config --global user.email "${ONTOLOGY_NAME}@emmc.eu"
+          git config --global user.name "${ONTOLOGY_NAME}"
           git add versions/${TAG#v}
           git commit -m "Release version ${TAG#v}"
           git push origin gh-pages
