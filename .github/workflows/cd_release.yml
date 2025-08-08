@@ -24,7 +24,7 @@ jobs:
 
       - name: List tag
         run: |
-          mkdir -p versions/$version
+          mkdir -p versions/${TAG#v}
           cp -f \
               README.md \
               ${ONTOLOGY_NAME}.ttl \
@@ -35,5 +35,5 @@ jobs:
       - name: Push to gh-pages
         run: |
           git add versions/${TAG#v}
-          git commit -m "Release version $version"
+          git commit -m "Release version ${TAG#v}"
           git push origin gh-pages
