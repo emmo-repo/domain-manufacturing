@@ -10,7 +10,6 @@ env:
 permissions:
   contents: write
 
-
 jobs:
   deploy-on-ghpages:
     #concurrency: ci-${{ github.ref }}  # Recommended if you intend to make multiple deployments in quick succession.

@@ -1,0 +1,45 @@
+name: Release new version
+
+#on:
+#  release:
+#    types: [published]
+
+on:
+  push:
+    branches: [master]
+
+env:
+  ONTOLOGY_NAME: manufacturing
+
+permissions:
+  contents: write
+
+jobs:
+  release_version:
+    name: Checkout gh-pages
+    uses: actions/checkout@v4
+    with:
+      ref: gh-pages
+
+    name: List tag
+    run:
+      tag1="${{ github.ref_name }}"
+      tag2="${GITHUB_REF#refs/tags/}"
+      echo "ref_name: ${{ github.ref_name }}"
+      echo "tag: ${GITHUB_REF#refs/tags/}"
+      echo "tag1: $tag1"
+      echo "tag2: $tag2"
+
+      #mkdir -p versions/$version
+      #cp -f \
+      #    README.md +
+      #    ${ONTOLOGY_NAME}.ttl \
+      #    ${ONTOLOGY_NAME}-dependencies.ttl \
+      #    ${ONTOLOGY_NAME}-inferred.ttl +
+      #    versions/$version/.
+
+    #name: Push to gh-pages
+    #run:
+    #  git add versions/$version
+    #  git commit -m "Release version $version"
+    #  git push origin gh-pages
