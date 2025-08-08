@@ -33,7 +33,7 @@ jobs:
     - name: Create dependencies, squashed and inferred ontologies
       run: |
         mkdir build
-        cp README build/.
+        cp README.md build/.
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
