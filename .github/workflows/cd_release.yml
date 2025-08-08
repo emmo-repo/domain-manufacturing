@@ -29,7 +29,7 @@ jobs:
           ref: gh-pages
 
       - name: List tag
-        run:
+        run: |
           tag1="${TAG}"
           tag2="${GITHUB_REF#refs/tags/}"
           version=${TAG#v}
@@ -52,7 +52,7 @@ jobs:
           #    versions/$version/.
 
       #- name: Push to gh-pages
-      #  run:
+      #  run: |
       #    git add versions/$version
       #    git commit -m "Release version $version"
       #    git push origin gh-pages
