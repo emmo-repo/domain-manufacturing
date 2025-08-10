@@ -25,6 +25,7 @@
     dcterms:contributor emmo:FrancescaBleken , emmo:GerhardGoldbeck ;
     dcterms:issued "2025-08-07"^^xsd:date ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:mediator emmo:EMMC_ASBL ;
     dcterms:modified "2025-08-07"^^xsd:date ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Manufacturing Domain Ontology"@en ;

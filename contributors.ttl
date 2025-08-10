@@ -16,7 +16,7 @@
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Contributors"@en ;
-    owl:versionInfo "1.0.1" ;
+    owl:versionInfo "0.1.1" ;
     foaf:mbox <mailto:emmo@emmc.eu> .
 
 
@@ -26,6 +26,7 @@
 
 :EibarFlores rdf:type owl:NamedIndividual ;
     emmo:EMMO_e117f976_7a5d_4508_bf85_9226dca58e1f "https://orcid.org/0000-0003-2954-1233"^^xsd:anyURI ;
-    skos:prefLabel "EibarFlores" ;
+    skos:altLabel "EibarFlores" ;
+    skos:prefLabel "Eibar Flores" ;
     foaf:name "Eibar Flores" ;
     foaf:workplaceHomepage <https://www.sintef.no/en/> .
