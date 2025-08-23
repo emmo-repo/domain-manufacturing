@@ -12,6 +12,7 @@
 @prefix chems: <https://w3id.org/emmo/domain/chemical-substance#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix manu: <https://w3id.org/emmo/domain/manufacturing#> .
 @base <https://w3id.org/emmo/domain/manufacturing#> .
 
 <https://w3id.org/emmo/domain/manufacturing> rdf:type owl:Ontology ;
