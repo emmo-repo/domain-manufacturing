@@ -9,13 +9,13 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 
 <https://w3id.org/emmo/domain/manufacturing/contributors> rdf:type owl:Ontology ;
-    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.1.1/contributors> ;
+    owl:versionIRI <https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/contributors> ;
     owl:imports <https://w3id.org/emmo/contributors> ;
     dcterms:abstract "People and organisations who has contributed to the development of the Manufacturing Domain Ontology."@en ;
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Contributors"@en ;
-    owl:versionInfo "1.0.1" ;
+    owl:versionInfo "1.2.0-beta" ;
     foaf:mbox <mailto:emmo@emmc.eu> .
 
 
@@ -23,8 +23,7 @@
 #    Classes
 #################################################################
 
-:EibarFlores rdf:type owl:NamedIndividual ;
-    emmo:EMMO_e117f976_7a5d_4508_bf85_9226dca58e1f "https://orcid.org/0000-0003-2954-1233"^^xsd:anyURI ;
+<https://orcid.org/0000-0003-2954-1233> a foaf:Person ;
     skos:prefLabel "EibarFlores" ;
     foaf:name "Eibar Flores" ;
     foaf:workplaceHomepage <https://www.sintef.no/en/> .

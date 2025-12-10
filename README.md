@@ -7,10 +7,11 @@ The current version only includes two modules for manufacturing equipment and pr
 ### Imported ontologies
 Version dependencies on imported ontologies:
 
-| Version    | [EMMO] |
-|------------|--------|
-| 0.1.0-beta | 1.0.0  |
-| 0.1.1      | 1.0.1  |
+| Version    | [EMMO] | Status      |
+|------------|--------|-------------|
+| 0.1.0-beta | 1.0.0  | Development |
+| 0.1.1      | 1.0.1  | Stable      |
+| 0.2.0-beta | 1.0.2  | Development |
 
 Note that version 0.1.0-beta is consistent with [ECHO] 0.30.0-beta.
 
