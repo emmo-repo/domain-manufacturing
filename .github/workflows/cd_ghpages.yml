@@ -30,21 +30,30 @@ jobs:
         pip install --upgrade pip
         pip install git+https://github.com/emmo-repo/EMMOntoPy.git@master
 
-    - name: Create dependencies, squashed and inferred ontologies
+    - name: Prepare build directory for distribution
       run: |
         mkdir build
         cp README.md build/.
+
+    - name: Create dependencies
+      run: |
         ontoconvert \
             -saw \
             --namespace="emmo:https://w3id.org/emmo#" \
             ${ONTOLOGY_NAME}-dependencies.ttl \
             build/${ONTOLOGY_NAME}-dependencies.ttl
+
+    - name: Create squashed ontology
+      run: |
         ontoconvert \
             -sawe \
             --base-iri="${ONTOLOGY_IRI}#" \
             --iri="${ONTOLOGY_IRI}" \
             ${ONTOLOGY_NAME}.ttl \
             build/${ONTOLOGY_NAME}.ttl
+
+    - name: Create inferred ontology
+      run: |
         ontoconvert \
             -sawe \
             --base-iri="${ONTOLOGY_IRI}#" \
