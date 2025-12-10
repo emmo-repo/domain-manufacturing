@@ -4,17 +4,10 @@
 
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta"                                 uri="manufacturing.ttl"/>
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/contributors"                    uri="contributors.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/local"                           uri="manufacturing-local.ttl"/>
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/manufacturing-dependencies"      uri="manufacturing-dependencies.ttl"/>
 
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/modules/manufacturing-equipment" uri="modules/manufacturing-equipment.ttl"/>
         <uri name="https://w3id.org/emmo/domain/manufacturing/0.2.0-beta/modules/manufacturing-processes" uri="modules/manufacturing-processes.ttl"/>
-
-        <!-- Can be skipped when redirection rules have been merged -->
-        <!--
-        <uri name="https://w3id.org/emmo/domain/manufacturing/dependencies"                          uri="https://emmo-repo.github.io/domain-manufacturing/manufacturing-dependencies.ttl"/>
-        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1/dependencies"                    uri="https://emmo-repo.github.io/domain-manufacturing/versions/0.1.1/manufacturing-dependencies.ttl"/>
-        -->
 
     </group>
 </catalog>

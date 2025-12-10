@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
+
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1"                                 uri="../manufacturing.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1/contributors"                    uri="../contributors.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1/manufacturing-dependencies"      uri="../manufacturing-dependencies.ttl"/>
+
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-equipment" uri="manufacturing-equipment.ttl"/>
+        <uri name="https://w3id.org/emmo/domain/manufacturing/0.1.1/modules/manufacturing-processes" uri="manufacturing-processes.ttl"/>
+
+    </group>
+</catalog>
